@@ -1,6 +1,6 @@
 # Linea Bar 🍸
 
-A concept-driven bar website built as a creative portfolio project. Linea Bar combines minimal elegance with a refined digital experience — designed to feel both sophisticated and welcoming.
+A concept driven bar website built as a creative portfolio project. Linea Bar combines minimal elegance with a refined digital experience, designed to feel both sophisticated and welcoming.
 
 ---
 
@@ -79,7 +79,7 @@ Linea Bar/
 
 ## Author
 
-Built by Megi Davidhi — Frontend Developer & Designer  
+Built by Megi Davidhi | Frontend Developer & Designer  
 [LinkedIn](https://www.linkedin.com/in/megi-davidhi-851112414/) · [GitHub](https://github.com/davidhimegi25-a11y)
 
 
