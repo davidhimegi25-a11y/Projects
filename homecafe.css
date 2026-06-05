@@ -1,0 +1,381 @@
+:root {
+  --primary-color: #090f15;
+  --second-color: #d3d1ce;
+  --third-color: #31313197;
+}
+
+body {
+  background-image: url(image/background.jpg);
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  color: var(--second-color);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 112%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  z-index: 1000;
+  overflow: hidden;
+  top: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--second-color);
+  display: block;
+  justify-content: center;
+  padding: 14px 16px;
+  border: #8f8b84 solid 1px;
+  border-radius: 30px;
+}
+
+.navbar-left h1 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--second-color);
+}
+
+.navbar-center {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-right {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+}
+
+.navbar-center a::after {
+  background-color: var(--third-color);
+}
+
+.hero1 {
+  height: 100vh;
+  text-align: center;
+}
+
+.hero1 h1 {
+  position: absolute;
+  top: 400px;
+  left: 20%;
+  text-align: center;
+  color: var(--second-color);
+  z-index: 100000000000;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.hero1 p {
+  position: absolute;
+  top: 500px;
+  left: 28%;
+  text-align: center;
+  color: var(--second-color);
+  z-index: 100000000000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.hero2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  padding: 40px;
+}
+
+.hero2 h5 {
+  font-size: 30px;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  width: 300px;
+  height: 450px;
+}
+
+.center img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left {
+  text-align: right;
+}
+.right {
+  text-align: left;
+}
+
+/* ═══════════════════════
+   TABLET LANDSCAPE ≤1024px
+═══════════════════════ */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  .navbar-center {
+    gap: 8px;
+  }
+  .navbar a {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .hero1 h1 {
+    font-size: 40px;
+    left: 10%;
+    top: 340px;
+    width: 80%;
+  }
+  .hero1 p {
+    font-size: 18px;
+    left: 15%;
+    top: 460px;
+    width: 70%;
+  }
+
+  .center {
+    width: 250px;
+    height: 380px;
+  }
+  .hero2 h5 {
+    font-size: 26px;
+  }
+}
+
+/* ═══════════════════════
+   TABLET PORTRAIT ≤768px
+═══════════════════════ */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 16px;
+  }
+  .navbar-left h1 {
+    font-size: 18px;
+  }
+  .navbar-center {
+    gap: 6px;
+  }
+  .navbar a {
+    padding: 8px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+  }
+
+  .overlay {
+    height: 115%;
+  }
+
+  .hero1 h1 {
+    font-size: 28px;
+    top: 280px;
+    left: 5%;
+    width: 90%;
+    line-height: 1.3;
+  }
+  .hero1 p {
+    font-size: 14px;
+    top: 390px;
+    left: 5%;
+    width: 90%;
+    line-height: 1.5;
+  }
+
+  .hero2 {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 10px;
+    flex-wrap: nowrap;
+  }
+
+  .left,
+  .right {
+    text-align: left;
+    font-size: 12px;
+    flex: 1;
+  }
+
+  .left {
+    text-align: right;
+  }
+  .right {
+    text-align: left;
+  }
+
+  .center {
+    width: 120px;
+    height: 180px;
+    flex-shrink: 0;
+  }
+
+  .hero2 h5 {
+    font-size: 14px;
+    margin: 0 0 6px 0;
+  }
+  .hero2 p {
+    font-size: 11px;
+    margin: 2px 0;
+  }
+}
+
+/* ═══════════════════════
+   MOBILE ≤480px
+   iPhone 14 Pro Max = 430px
+═══════════════════════ */
+@media (max-width: 480px) {
+  body {
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: center top;
+    background-color: #090f15;
+  }
+
+  .navbar {
+    padding: 12px 8px;
+  }
+  .navbar-left h1 {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .navbar-center {
+    gap: 3px;
+  }
+  .navbar a {
+    padding: 6px 7px;
+    font-size: 10.5px;
+    border-radius: 14px;
+  }
+  .navbar-right a {
+    padding: 6px 7px;
+    font-size: 10.5px;
+  }
+  .hero1 {
+    height: 24vh;
+  }
+
+  .overlay {
+    height: 32%;
+  }
+
+  .hero1 h1 {
+    font-size: 20px;
+    top: 100px;
+    left: 4%;
+    width: 92%;
+    line-height: 1.3;
+  }
+
+  .hero1 p {
+    font-size: 10px;
+    top: 170px;
+    width: 87%;
+    line-height: 1.5;
+  }
+
+  .center {
+    max-width: 260px;
+    height: 300px;
+  }
+  .hero2 {
+    padding: 30px 14px;
+    gap: 24px;
+  }
+  .hero2 h5 {
+    font-size: 20px;
+  }
+  .hero2 p {
+    font-size: 14px;
+  }
+
+  .hero2 {
+    gap: 8px;
+    padding: 16px 8px;
+  }
+
+  .center {
+    width: 100px;
+    height: 150px;
+  }
+
+  .hero2 h5 {
+    font-size: 12px;
+  }
+  .hero2 p {
+    font-size: 10px;
+  }
+}
+
+/* ═══════════════════════
+   MOBILE I VOGEL ≤360px
+═══════════════════════ */
+@media (max-width: 360px) {
+  .navbar-left h1 {
+    font-size: 13px;
+  }
+  .navbar a {
+    padding: 5px 6px;
+    font-size: 10px;
+  }
+
+  .hero1 {
+    height: calc(100vw * 1.5);
+  }
+  .overlay {
+    height: 100%;
+  }
+
+  .hero1 h1 {
+    font-size: 19px;
+    top: 100px;
+  }
+  .hero1 p {
+    font-size: 11px;
+    top: 200px;
+  }
+
+  .center {
+    max-width: 220px;
+    height: 260px;
+  }
+  .center {
+    width: 80px;
+    height: 120px;
+  }
+
+  .hero2 h5 {
+    font-size: 11px;
+  }
+  .hero2 p {
+    font-size: 9px;
+  }
+}

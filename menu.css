@@ -1,0 +1,227 @@
+:root {
+  --primary-color: #090f15;
+  --second-color: #d3d1ce;
+  --third-color: #31313197;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.navbar {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  z-index: 1000;
+  overflow: hidden;
+  top: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--second-color);
+  display: block;
+  justify-content: center;
+  padding: 14px 16px;
+  border: #8f8b84 solid 1px;
+  border-radius: 30px;
+}
+
+.navbar-left h1 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--second-color);
+}
+
+.navbar-center {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-right {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+}
+
+.navbar-center a::after {
+  background-color: var(--third-color);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  background: #161718;
+  color: white;
+  text-decoration: none;
+  border-radius: 16px;
+  text-align: center;
+  min-height: 180px;
+  transition: all 0.3s ease;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.card:hover {
+  background: #2a2a2a;
+  transform: translateY(-6px);
+}
+
+/* ═══════════════════════
+   TABLET LANDSCAPE ≤1024px
+═══════════════════════ */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  .navbar-center {
+    gap: 8px;
+  }
+  .navbar a {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .cards {
+    gap: 18px;
+    padding: 30px;
+  }
+
+  .card {
+    padding: 24px;
+    min-height: 160px;
+  }
+  .card h3 {
+    font-size: 16px;
+  }
+}
+
+/* ═══════════════════════
+   TABLET PORTRAIT ≤768px
+═══════════════════════ */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 16px;
+  }
+  .navbar-left h1 {
+    font-size: 18px;
+  }
+  .navbar-center {
+    gap: 6px;
+  }
+  .navbar a {
+    padding: 8px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 16px;
+  }
+
+  .card {
+    padding: 14px;
+    min-height: 120px;
+  }
+  .card h3 {
+    font-size: 13px;
+  }
+  .card p {
+    font-size: 11px;
+  }
+}
+
+/* ═══════════════════════
+   MOBILE ≤480px
+═══════════════════════ */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px 8px;
+  }
+  .navbar-left h1 {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .navbar-center {
+    gap: 3px;
+  }
+  .navbar a {
+    padding: 6px 7px;
+    font-size: 10.5px;
+    border-radius: 14px;
+  }
+  .navbar-right a {
+    padding: 6px 7px;
+    font-size: 10.5px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .card {
+    padding: 10px;
+    min-height: 100px;
+    border-radius: 10px;
+  }
+  .card h3 {
+    font-size: 11px;
+  }
+  .card p {
+    font-size: 9px;
+  }
+}
+
+/* ═══════════════════════
+   MOBILE I VOGEL ≤360px
+═══════════════════════ */
+@media (max-width: 360px) {
+  .navbar-left h1 {
+    font-size: 13px;
+  }
+  .navbar a {
+    padding: 5px 6px;
+    font-size: 10px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .card {
+    padding: 8px;
+    min-height: 90px;
+  }
+  .card h3 {
+    font-size: 10px;
+  }
+  .card p {
+    font-size: 8px;
+  }
+}

@@ -1,0 +1,214 @@
+:root {
+  --primary-color: #090f15;
+  --second-color: #d3d1ce;
+  --third-color: #31313197;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.navbar {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  z-index: 1000;
+  overflow: hidden;
+  top: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--second-color);
+  display: block;
+  justify-content: center;
+  padding: 14px 16px;
+  border: #8f8b84 solid 1px;
+  border-radius: 30px;
+}
+
+.navbar-left h1 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--second-color);
+}
+
+.navbar-center {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-right {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+}
+
+.navbar-center a::after {
+  background-color: var(--third-color);
+}
+
+.hero {
+  color: var(--second-color);
+  width: 1500px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  margin: 40px;
+  padding: 40px;
+  gap: 200px;
+  font-size: 25px;
+  margin-left: 150px;
+}
+
+span {
+  font-size: 40px;
+  font-weight: 300;
+  font-style: italic;
+  color: red;
+}
+
+.image {
+  width: 450px;
+  height: auto;
+}
+
+/* ═══════════════════════
+   TABLET LANDSCAPE ≤1024px
+═══════════════════════ */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  .navbar-center {
+    gap: 8px;
+  }
+  .navbar a {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .hero {
+    width: auto;
+    margin: 30px;
+    margin-left: 40px;
+    padding: 30px;
+    gap: 60px;
+    font-size: 20px;
+  }
+
+  span {
+    font-size: 32px;
+  }
+  .image {
+    width: 320px;
+  }
+}
+
+/* ═══════════════════════
+   TABLET PORTRAIT ≤768px
+═══════════════════════ */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 16px;
+  }
+  .navbar-left h1 {
+    font-size: 18px;
+  }
+  .navbar-center {
+    gap: 6px;
+  }
+  .navbar a {
+    padding: 8px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    width: auto;
+    margin: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    gap: 30px;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  span {
+    font-size: 28px;
+  }
+  .image {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* ═══════════════════════
+   MOBILE ≤480px
+═══════════════════════ */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px 8px;
+  }
+  .navbar-left h1 {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .navbar-center {
+    gap: 3px;
+  }
+  .navbar a {
+    padding: 6px 7px;
+    font-size: 10.5px;
+    border-radius: 14px;
+  }
+  .navbar-right a {
+    padding: 6px 7px;
+    font-size: 10.5px;
+  }
+
+  .hero {
+    margin: 14px;
+    margin-left: 14px;
+    padding: 14px;
+    gap: 20px;
+    font-size: 15px;
+  }
+
+  span {
+    font-size: 22px;
+  }
+  .image {
+    width: 100%;
+  }
+}
+
+/* ═══════════════════════
+   MOBILE I VOGEL ≤360px
+═══════════════════════ */
+@media (max-width: 360px) {
+  .navbar-left h1 {
+    font-size: 13px;
+  }
+  .navbar a {
+    padding: 5px 6px;
+    font-size: 10px;
+  }
+
+  .hero {
+    margin: 10px;
+    padding: 10px;
+    font-size: 13px;
+  }
+  span {
+    font-size: 19px;
+  }
+  .image {
+    width: 100%;
+  }
+}
