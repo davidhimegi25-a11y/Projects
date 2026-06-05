@@ -7,16 +7,16 @@ A concept-driven bar website built as a creative portfolio project. Linea Bar co
 ## Preview
 
 ### Home
-![Home](screenshots/home.png)
+![Home](home.png)
 
 ### Menu
-![Menu](screenshots/menu.png)
+![Menu](menu.png)
 
 ### Products
-![Products](screenshots/products.png)
+![Products](products.png)
 
 ### Contact
-![Contact](screenshots/contact.png)
+![Contact](contact.png)
 
 ---
 
